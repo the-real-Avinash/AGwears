@@ -1,11 +1,12 @@
-import Image from "next/image";
+import Hero from "@/components/Hero";
+import Features from "@/components/Features";
 
-export default function Home() {
+export default function LandingPage() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-4xl font-bold">Hello World</h1>
-      <p className="mt-4 text-lg">Welcome to my Next.js app!</p>
-      
-    </main>
+    <>
+      <Hero />
+      <Features />
+      {/* You can add testimonials, newsletter CTA, footer, etc. */}
+    </>
   );
 }
